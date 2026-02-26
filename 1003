@@ -1,0 +1,5 @@
+a = float(input())
+
+area = 3.14159 * a * a
+
+print(f"A= {area}")
