@@ -1,1 +1,8 @@
+a = int(input("Primeiro Valor: "))
+b = int(input("Segundo Valor: "))
+convert = int(a)
+convert = int(b)
 
+soma = a+b
+
+print(soma)
