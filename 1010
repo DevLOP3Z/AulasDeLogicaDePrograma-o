@@ -1,0 +1,23 @@
+codigo1, quantidade1, valor1 = map(float, input().split())
+codigo2, quantidade2, valor2 = map(float, input().split())
+
+custo1 = quantidade1 * valor1 
+custo2 = quantidade2 * valor2
+
+print(f"Valor a pagar: R$ {(custo1+custo2):.2f}") 
+
+
+#Segundo metodo
+
+x, y, z = input() .split()
+a, b, c = input() .split()
+
+converty = int(y)
+convertB = int(b)
+convertZ = float(z)
+convertC = float(c)
+
+Valor = (converty*convertZ) + (convertB*convertC) 
+
+print(f"Valor a pagar: R$ {Valor:.2f}") 
+
