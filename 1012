@@ -1,0 +1,15 @@
+A, B, C = map(float, input().split('-'))
+pi = 3.14159
+
+AreaTriangulo = A * C / 2
+AreaCirculo = C**2 * pi
+AreaTrapezio = (A+B) * C / 2  
+AreaQuadrado =  B**2 
+AreaRetangulo = A*B 
+
+print(f'TRIANGULO: {AreaTriangulo:.3f}')
+print(f'CIRCULO: {AreaCirculo:.3f}')
+print(f'TRAPEZIO: {AreaTrapezio:.3f}')
+print(f'QUADRADO: {AreaQuadrado:.3f}')
+print(f'RETANGULO: {AreaRetangulo:.3f}')
+
