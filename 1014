@@ -1,0 +1,5 @@
+X, Y = map(float,input().split())
+
+Consumo = X / Y 
+
+print(f"{Consumo:.3f} km/l")
