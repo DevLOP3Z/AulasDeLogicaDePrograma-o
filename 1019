@@ -1,0 +1,9 @@
+N = int(input())
+
+Horas = N//3600 # divisão pegando o numero inteira
+segundos = N%3600 #Resto da parte fracional da sua primeira divisão 
+Minutos = N//60
+segundos = N%60
+
+
+print(f'{Horas}:{Minutos}:{segundos}')
