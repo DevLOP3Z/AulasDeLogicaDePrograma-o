@@ -1,0 +1,21 @@
+DiaA = int(input().split()[1])
+HoraA, minutoA, segundoA = map(int, input().split(' :'))
+
+DiaB = int(input().split()[1])
+HoraB, minutoB, segundoB = map(int, input().split(' :'))
+
+segundos = (segundoB - segundoA) % 60 
+
+segundosMaior = segundoA > segundoB 
+minutos = (minutoB - minutoA - int (segundosMaior)) % 60
+
+minutoMaior = minutoA > minutoB 
+horas = (HoraB - HoraA - (int(segundosMaior) or int(minutoMaior))) %24
+
+horaMaior = HoraA > HoraB
+dias = DiaB - DiaA - (int(segundosMaior) or int (minutoMaior) or int(horaMaior))
+
+print(f'{dias} dia(s)')
+print(f'{horas} hora(s)')
+print(f'{minutos} minuto(s)')
+print(f'{segundos} segundo(s)')
