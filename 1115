@@ -1,0 +1,9 @@
+while True:
+    X, Y = map(int, input().split())
+    if X*Y > 0:
+        print("Primeiro" if X > 0 else "terceiro")
+    elif X*Y < 0:
+        print("Quarto" if X > 0 else "Segundo")
+    else:
+        break
+    
